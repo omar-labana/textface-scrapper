@@ -8,4 +8,4 @@ scraper = Scraper.new("https://textfac.es/", 'button.facebtn') {
   | face_tag |
   face_tag.attributes["data-clipboard-text"].value
 }
-# p scraper.generate_face()
+p scraper.generate_face()

@@ -19,6 +19,6 @@ class Scraper
   end
 
   def generate_face
-
+    @data[rand(@data.count)] 
   end
 end
