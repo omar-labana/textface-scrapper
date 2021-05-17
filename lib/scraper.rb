@@ -2,7 +2,7 @@ require 'nokogiri'
 require 'httparty'
 
 class Scraper
-  attr_reader :hash_data 
+  attr_reader :hash_data
 
   def initialize(url, element)
     unparsed_page = HTTParty.get(url)
@@ -10,15 +10,15 @@ class Scraper
     hash_data = parsed_page.css(element)
     @data = []
     if block_given?
-      hash_data.each { |element|
-        @data.push( yield element)
-      }
+      hash_data.each do |hash_element|
+        @data.push(yield hash_element)
+      end
     else
-      @data = hash_data 
+      @data = hash_data
     end
   end
 
   def generate_face
-    @data[rand(@data.count)] 
+    @data[rand(@data.count)]
   end
 end
