@@ -2,7 +2,7 @@ require 'nokogiri'
 require 'httparty'
 
 class Scraper
-  attr_reader :hash_data
+  attr_reader :data
 
   def initialize(url, element)
     unparsed_page = HTTParty.get(url)
