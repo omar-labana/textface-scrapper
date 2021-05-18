@@ -33,7 +33,21 @@ To get a local copy up and running follow these simple example steps (◕‿◕�
 
 ### Usage
 
-Run `$ irb -r ../bin/main.rb`
+Run: 
+```
+$ irb -r ../bin/main.rb
+```
+Then add the URL to the webpage, the element you target and/or any extra processing needed. 
+Like so:
+```
+$ faces = Scraper.new('https://textfac.es/', 'button.facebtn') do |face_tag|
+      face_tag.attributes['data-clipboard-text'].value
+  end
+```
+Finally each time you want a new text face run: 
+```
+$ faces.generate_face
+```    
 
 ### Run tests
 
