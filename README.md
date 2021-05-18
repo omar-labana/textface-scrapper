@@ -1,10 +1,10 @@
 # Textfaces Scraper (づ｡◕‿‿◕｡)づ
 
-> Scraping any text based contet such as text faces to be used anywhere.
+> Scraping any text-based content such as text faces to be used anywhere.
 
 ![screenshot](./app_screenshot.png)
 
-Terminal based web scraper to target HTML/XML markup and extract any meaningful content from them.
+Terminal-based web scraper to target HTML/XML markup and extract any meaningful content from them.
 
 ## Built With
 
@@ -20,7 +20,7 @@ To get a local copy up and running follow these simple example steps (◕‿◕�
 
 - Have Git installed
 - Your machine can run Ruby code
-- Any bash to excute commands
+- Any bash to execute commands
 
 ### Setup
 
@@ -44,7 +44,7 @@ $ faces = Scraper.new('https://textfac.es/', 'button.facebtn') do |face_tag|
       face_tag.attributes['data-clipboard-text'].value
   end
 ```
-Finally each time you want a new text face run: 
+Finally, each time you want a new text face run: 
 ```
 $ faces.generate_face
 ```    

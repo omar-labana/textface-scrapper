@@ -16,8 +16,12 @@ class Scraper
     end
   end
 
+  def random_number(pivot)
+    rand(pivot.count)
+  end
+
   def generate_face
-    @data[rand(@data.count)]
+    @data[random_number(@data)]
   end
 
   private

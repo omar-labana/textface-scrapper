@@ -28,4 +28,11 @@ describe Scraper do
         .to eql(Nokogiri::XML::NodeSet) # Hash equivilant
     end
   end
+
+  describe '#random_number' do
+    it 'Return a random random number starting from 0 untill Array.count' do
+      expect(scraper.random_number(scraper.data))
+        .to be >= 0
+    end
+  end
 end
