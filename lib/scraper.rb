@@ -27,5 +27,4 @@ class Scraper
     parsed_page ||= Nokogiri::HTML(unparsed_page.body)
     parsed_page.css(element)
   end
-
 end

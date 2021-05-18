@@ -35,7 +35,7 @@ To get a local copy up and running follow these simple example steps (◕‿◕�
 
 Run: 
 ```
-$ irb -r ../bin/main.rb
+$ irb -r ./bin/main.rb
 ```
 Then add the URL to the webpage, the element you target and/or any extra processing needed. 
 Like so:
