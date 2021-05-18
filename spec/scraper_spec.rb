@@ -13,6 +13,10 @@ describe Scraper do
         .to eql(Array)
     end
     it 'Fetches HTML/XML data and maps it according to the passed bloack' do
+      expect(scraper.data.class)
+        .to_not eql(nil)
+    end
+    it 'Fetches HTML/XML data and maps it according to the passed bloack' do
       expect(scraper2.data.class)
         .to eql(Nokogiri::XML::NodeSet) # Hash equivilant
     end
@@ -22,6 +26,10 @@ describe Scraper do
     it 'Return a random element(text face) from the data array' do
       expect(scraper.generate_face.class)
         .to eql(String)
+    end
+    it 'Return a random element(text face) from the data array' do
+      expect(scraper.generate_face.class)
+        .to_not eql(nil)
     end
     it 'Return a random element(text face) from the data array' do
       expect(scraper2.data.class)
