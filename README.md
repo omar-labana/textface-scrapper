@@ -1,4 +1,4 @@
-# Textfaces Scraper
+# Textfaces Scraper (づ｡◕‿‿◕｡)づ
 
 > Scraping any text based contet such as text faces to be used anywhere.
 
@@ -14,9 +14,9 @@ Terminal based web scraper to target HTML/XML markup and extract any meaningful 
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple example steps (◕‿◕✿). 
 
-### Prerequisites
+### Prerequisites ༼ʘ̚ل͜ʘ̚༽
 
 - Have Git installed
 - Your machine can run Ruby code
@@ -39,7 +39,7 @@ Run `$ irb -r ../bin/main.rb`
 
 Run `$ rspec`
 
-## Authors
+## Authors (ღ˘⌣˘ღ)
 
 👤 **Author1**
 
@@ -57,7 +57,7 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
+## Acknowledgments (✿´‿`)
 
 - [Text Faces](https://textfac.es/)
 - [Nokogiri GEM](https://github.com/sparklemotion/nokogiri)
